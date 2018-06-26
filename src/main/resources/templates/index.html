@@ -11,8 +11,15 @@
 </head>
 <body>
 	<h1 th:text="${greetings}"></h1>
+	<div th:include="@{${page}}"></div>
+	
+	<div id="custom_confirm_modal"></div>
+	<div id="custom_modal"></div>
 	
 	<script th:src="@{/static/vendors/jquery-3.3.1.min.js}" type="text/javascript"></script>
+	<script th:src="@{/static/templates/base.js}" type="text/javascript"></script>
+	<script th:src="@{/static/templates/signup.js}" type="text/javascript"></script>
+	
     <script th:src="@{/static/vendors/popper.min.js}" type="text/javascript"></script>
     <script th:src="@{/static/js/bootstrap.min.js}" type="text/javascript"></script>
     <script th:src="@{/static/vendors/holder.min.js}" type="text/javascript"></script>

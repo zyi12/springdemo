@@ -14,7 +14,7 @@ public class MainController {
 	
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String index(Model model) {
-		model.addAttribute("greetings", appName);
+		model.addAttribute("page", "includes/page");
 		return "index";
 	}
 }
