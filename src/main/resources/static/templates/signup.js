@@ -14,7 +14,7 @@ var confirmModal = `<div class="modal fade" id="confirm_modal" tabindex="0" role
 					    </div>
 					  </div>
 					</div>`;
-function init(){	
+function init(){
 	$(document).on("click", "#create_account",function(e) {
 		var createAccountModal = `<div class="modal fade" id="create_account_modal" tabindex="-1" role="dialog" aria-labelledby="create_account_modal" aria-hidden="true">
 								  <div class="modal-dialog" role="document">
@@ -27,22 +27,63 @@ function init(){
 								      </div>
 								      <div class="modal-body">
 								        <form>
-								          <div class="form-group">
-								            <label for="email" class="col-form-label">Email:</label>
-								            <input type="text" class="form-control" id="email">
-								          </div>
-								          <div class="form-group">
-								            <label for="password" class="col-form-label">Password:</label>
-								            <input type="text" class="form-control" id="password">
-								          </div>
-								          <div class="form-group">
-								            <label for="username" class="col-form-label">Username:</label>
-								            <input type="text" class="form-control" id="username">
-								          </div>
+								        
+								        <div class="row">
+							              <div class="col-md-6 mb-3">
+							                <div class="form-group input-group-sm">
+								            	<label for="firstname" class="col-form-label">First Name:</label>
+								            	<input type="text" class="form-control" id="firstname">
+								          	</div>
+							              </div>
+							              <div class="col-md-6 mb-3">
+							                <div class="form-group input-group-sm">
+								            	<label for="username" class="col-form-label">Username:</label>
+								            	<input type="text" class="form-control" id="username">
+								          	</div>
+							              </div>
+							              <div class="col-md-6 mb-3">
+							                <div class="form-group input-group-sm">
+								            	<label for="middlename" class="col-form-label">Middle Name:</label>
+								            	<input type="text" class="form-control" id="middlename">
+								          	</div>
+							              </div>
+							              <div class="col-md-6 mb-3">
+							                <div class="form-group input-group-sm">
+								            	<label for="password" class="col-form-label">Password:</label>
+								            	<input type="text" class="form-control" id="password">
+								          	</div>
+							              </div>
+							              <div class="col-md-6 mb-3">
+							                <div class="form-group input-group-sm">
+									            <label for="lastname" class="col-form-label">Last Name:</label>
+									            <input type="text" class="form-control" id="lastname">
+								          	</div>
+							              </div>
+							              <div class="col-md-6 mb-3">
+							                <div class="form-group input-group-sm">
+								            	<label for="mobileno" class="col-form-label">Mobile No.:</label>
+								            	<input type="text" class="form-control" id="mobileno">
+								          	</div>
+							              </div>
+							              <div class="col-md-6 mb-3">
+								          	<div class="form-group input-group-sm date">
+								          		<label for="birthdate" class="col-form-label">Birth Date:</label>
+											    <input type="text" class="form-control" data-provide="datepicker" id="birthdate">
+											    <div class="input-group-addon"></div>
+											</div>
+							              </div>
+							              <script>$('.datepicker').datepicker();</script>
+							              <div class="col-md-6 mb-3">
+							                <div class="form-group input-group-sm">
+								            	<label for="email" class="col-form-label">Email:</label>
+								            	<input type="text" class="form-control" id="email">
+								          	</div>
+							              </div>
+							            </div>
 								        </form>
 								      </div>
 								      <div class="modal-footer">
-								        <button type="button" class="btn btn-secondary close_modal" data-dismiss="modal">Close</button>
+								        <button type="button" class="btn btn-light close_modal" data-dismiss="modal">Close</button>
 								        <button type="button" class="btn btn-success submit_modal">Submit</button>
 								      </div>
 								    </div>
